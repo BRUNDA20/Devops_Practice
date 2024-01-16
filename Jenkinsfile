@@ -25,10 +25,4 @@ pipeline {
             }
         }
     }
-    post {
-      success{
-      }
-      failure{
-      }
-    }
 }
