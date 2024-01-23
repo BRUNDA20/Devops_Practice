@@ -20,7 +20,7 @@ pipeline{
             steps{
             gitCheckout(
                 branch: "main",
-                url: "https://github.com/BRUNDA20/Java_app_3.0.git"
+                url: "https://github.com/BRUNDA20/Devops_Practice.git"
             )
             }
         }
