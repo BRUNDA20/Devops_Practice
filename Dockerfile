@@ -1,4 +1,4 @@
-FROM nginx:latest
-COPY html /usr/share/nginx/html
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+FROM openjdk:8-jdk-alpine
+WORKDIR /app
+COPY ./target/*.jar app.jar
+CMD ["java", "-jar", "app.jar"]
